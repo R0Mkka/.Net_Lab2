@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <label for="number">Число</label>
+    <input type="number" id="number" [formControl]="numberControl" />
+  </div>
+
+  <div>
+    <label for="degree">Степень</label>
+    <input type="number" id="degree" [formControl]="degreeControl" />
+  </div>
+
+  <button (click)="countSqrtN()">Ньютон</button>
+  <button (click)="countSqrtPow()">Math.Pow()</button>
+
+  <div>
+    <span>Результат: </span>
+    <span>{{ result }}</span>
+  </div>
+</div>

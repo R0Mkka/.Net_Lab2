@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <label for="number">Число</label>
+    <input type="number" id="number" [formControl]="numberControl" />
+  </div>
+
+  <button (click)="convert()">В двоичную</button>
+
+  <div>
+    <span>Результат: </span>
+    <span>{{ result }}</span>
+  </div>
+</div>
